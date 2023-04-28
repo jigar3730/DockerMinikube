@@ -1,1 +1,27 @@
 Test project to learn docker and minikube and codespace
+    1  docker run hello-world
+    2  docker images
+    3  docker ps
+    4  docker ps -a
+    5  mkdir project1 && cd project1
+    6  touch Dockerfile
+    7  ls -la
+    8  touch app.js
+    9  docker build -t project1:01 .
+   10  ls -la
+   11  docker images
+   12  docker run -p 4000:80 --name app-run1 project1:01
+   13  docker build -t project1:02 .
+   14  docker images
+   15  docker run -p 6000:80 --name app-run1 -d project1:01
+   16  docker rm 359
+   17  docker run -p 6000:80 --name app-run1 -d project1:01
+   19  docker run -p 8080:80 --name app-run2 -d project1:02
+  
+  How to use local docker images with Minikube?
+  https://stackoverflow.com/questions/42564058/how-to-use-local-docker-images-with-minikube
+
+Set the environment variables with eval $(minikube docker-env)
+Build the image with the Docker daemon of Minikube (eg docker build -t my-image .)
+Set the image in the pod spec like the build tag (eg my-image)
+Set the imagePullPolicy to Never, otherwise Kubernetes will try to download the image.
