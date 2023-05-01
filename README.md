@@ -16,6 +16,12 @@ this is project is to demonstrate how you can use GitHub codespace to learn basi
 * Verify the app using services running in minikube 
 
 
-## Design Doc
+### Design Doc
 
-## How To run 
+### How To run
+
+### Know how could this be done better 
+please provide feedback or report issus and help improve.
+
+
+
