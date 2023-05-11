@@ -17,6 +17,8 @@ this is project is to demonstrate how you can use GitHub codespace to learn basi
 
 
 ### Design Doc
+-- Work in progress please review attached word doc 
+https://github.com/jigar3730/DockerMinikube/blob/main/Docker_minikube%20in%20codespaces.docx
 
 ### Commands used 
 ```sh
